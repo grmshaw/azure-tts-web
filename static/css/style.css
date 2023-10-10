@@ -1,0 +1,176 @@
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    color: #3E3E3E;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    margin-bottom: 5em;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-size: 18px;
+    line-height: 1.5; /* Increased line-height */
+    padding: 10px; /* Added padding */
+    border: 1px solid #ccc; /* Added border */
+}
+
+.voice-select, .speed-select {
+    font-size: 16px;
+}
+
+button {
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 0.6em;
+    margin-bottom: 2em;
+}
+
+button:hover {
+    background-color: #4a8f4a; /* Added hover effect */
+}
+
+.remove-text-block {
+    align-self: flex-end;
+    background-color: #d9534f;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.2s ease;
+    margin: 0;
+    margin-top: 0.3em;
+}
+
+.remove-text-block:hover {
+    background-color: #c9302c; /* Added hover effect */
+}
+
+.buttons-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center; /* Center the buttons */
+}
+
+#add-block, #synthesize, #preview {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+#add-block:hover, #synthesize:hover, #preview:hover {
+    background-color: #4a8f4a; /* Added hover effect */
+}
+
+#loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#party-popper {
+    font-size: 32px;
+    display: none;
+    text-align: center;
+    margin: 0.8em;
+}
+
+select {
+    font-size: 18px;
+    padding: 6px 10px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    background-color: #ffffff; /* Add background color */
+    transition: border-color 0.2s ease; /* Add transition for hover effect */
+}
+
+select:hover {
+    border-color: #4a8f4a; /* Add hover effect */
+}
+
+details {
+  width: 100%;
+  max-width: 600px;
+  margin-left: -2em;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #333;
+}
+
+details pre {
+  background-color: #f5f5f5;
+/*  border: 1px solid #ddd;*/
+  border-radius: 5px;
+/*  box-shadow: 0px 0px 5px #ddd;*/
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 1em;
+}
+
+footer {
+    background-color: #f5f5f5;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #999;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    #add-block, #synthesize {
+        margin-top: 0;
+    }
+}
